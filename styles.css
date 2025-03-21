@@ -1,0 +1,287 @@
+/* Reset default margins and paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Apply background image only to the home section */
+#home {
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+  background-image: url('images/One Park.jpg'); /* Ensure correct path */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Keeps the background image fixed while scrolling */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Sections follow normally after home */
+section {
+  background-color: #1a1a1a;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  min-height: 100vh; /* Each section takes up full screen height */
+}
+
+/* Body Styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #1a1a1a; /* Dark background for all sections */
+  color: white;
+}
+
+/* Centered Navigation */
+.navbar {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 30px;
+}
+
+.navbar a {
+  color: white;
+  font-size: 2em;
+  font-weight: 300;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #f1c40f;
+}
+
+/* Home Title */
+.spotz-title {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+/* Social media links */
+.social-media {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 15px;
+}
+
+.social-media a img {
+  width: 30px;
+  height: 30px;
+}
+
+/* SPOTZ label */
+.spotz-label {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  font-size: 3.5em;
+  font-weight: normal;
+  color: white;
+  font-family: 'Lobster', cursive;
+}
+
+/* Bio Section */
+section#bio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+/* Bio Image */
+.bio-container {
+  display: flex;
+  align-items: center;
+}
+
+.bio-container img {
+  width: 300px;
+  height: auto;
+  margin-right: 30px;
+  border-radius: 10px;
+}
+
+/* Bio Text */
+.bio-text {
+  max-width: 700px;
+  text-align: left;
+}
+
+.bio-text h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.bio-text p {
+  font-size: 1.2em;
+  line-height: 1.6;
+}
+
+/* Section Headings */
+section h1 {
+  font-size: 3em;
+}
+
+section p {
+  font-size: 1.2em;
+}
+
+#music {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+#music h1 {
+  font-size: 3rem;
+  color: white;
+  margin-bottom: 30px; /* Adds space below the heading */
+}
+
+/* Flexbox for side-by-side layout */
+.spotify-wrapper {
+  display: flex;
+  flex-wrap: wrap; /* Ensures responsiveness */
+  justify-content: center; /* Centers items horizontally */
+  gap: 20px; /* Space between items */
+  width: 90%;
+  max-width: 1200px;
+}
+
+.spotify-container {
+  flex: 1;
+  min-width: 300px; /* Ensures items don't shrink too much */
+  max-width: 400px; /* Prevents items from getting too wide */
+}
+
+
+#interview {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+#interview h1 {
+  font-size: 3rem;
+  color: white;
+  margin-bottom: 10px; /* Adds space between the heading and video */
+}
+
+.video-container {
+  width: 90%;
+  max-width: 1000px;
+}
+
+#bookings {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+#bookings h1 {
+  font-size: 3rem;
+  color: white;
+  margin-bottom: 20px; /* Space between heading and contact info */
+}
+
+/* Contact Info Styling */
+.contact-container {
+  margin-top: 20px; /* Adds space below the heading */
+}
+
+.contact-info {
+  background: #222;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-info p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.contact-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+.contact-info a {
+  color: #f1c40f;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+#gallery {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #1a1a1a;
+  color: white;
+}
+
+#gallery h1 {
+  font-size: 3rem;
+  margin-bottom: 30px;  /* Adds space between heading and gallery images */
+}
+
+.gallery-container {
+  display: flex;
+  flex-wrap: wrap;  /* Allows images to wrap to the next line when space is insufficient */
+  justify-content: center;  /* Centers the images horizontally */
+  gap: 20px;  /* Adds space between each image */
+}
+
+.gallery-item img {
+  width: 200px;  /* Fixed width for the images */
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Hover effect for images */
+.gallery-item img:hover {
+  transform: scale(1.05);
+}
+
+/* Initially hide elements */
+.hidden {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* When elements are in view */
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
