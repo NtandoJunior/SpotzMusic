@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
               entry.target.classList.add("show");
           }
       });
-  }, { threshold: 0.2 }); // Triggers when 20% of the element is visible
+  }, { threshold: 0.3 }); // Triggers when 20% of the element is visible
 
   hiddenElements.forEach((el) => observer.observe(el));
 });
