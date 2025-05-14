@@ -9,7 +9,7 @@
 #home {
   width: 100%;
   min-height: 100vh; /* Ensures full viewport height */
-  background-image: url('images/OnePark.jpg');
+  background-image: url('Images/OnePark.jpg');
   background-size: cover;
   background-position: center center; 
   background-repeat: no-repeat; 
