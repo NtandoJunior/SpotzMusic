@@ -22,12 +22,11 @@
   position: relative; 
 }
 
-@media (max-width: 768px) {
-  #home {
-    background-attachment: scroll; /* Fix for mobile devices */
-    min-height: 100vh; 
-    background-size: cover; 
-    background-position: top center; 
+@media (max-width: 600px) {
+  body {
+    background-size: contain;   /* Ensures the whole image fits */
+    background-repeat: no-repeat;
+    background-position: center;
   }
 }
 
