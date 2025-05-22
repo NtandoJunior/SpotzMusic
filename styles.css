@@ -34,7 +34,9 @@
 /* Extra fix for very small screens */
 @media (max-width: 480px) {
   #home {
-    background-size: 100% 100%; /* Force full coverage */
+    background-size: cover;           /* Ensures proportional scaling */
+    background-position: center top;  /* Adjusts focus for mobile, optional */
+    background-attachment: scroll;    /* Prevents parallax issues on mobile */
   }
 }
 
