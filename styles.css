@@ -116,6 +116,16 @@ body {
   height: 30px;
 }
 
+
+.social-media.scrolled a img {
+  filter: brightness(0) invert(1);
+}
+
+
+.social-media.scrolled svg {
+  fill: #fff !important;
+}
+
 /* SPOTZ label */
 .spotz-label {
   position: fixed;
@@ -125,6 +135,12 @@ body {
   font-weight: normal;
   color: white;
   font-family: 'Lobster', cursive;
+}
+
+@media (max-width: 600px) {
+  .spotz-label {
+    font-size: 2em;
+  }
 }
 
 /* Bio Section */
