@@ -23,19 +23,12 @@
 }
 
 @media (max-width: 600px) {
-  body {
-    background-size: contain;   /* Ensures the whole image fits */
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-}
-
-/* Extra fix for very small screens */
-@media (max-width: 480px) {
   #home {
-    background-size: cover;           /* Ensures proportional scaling */
-    background-position: center top;  /* Adjusts focus for mobile, optional */
-    background-attachment: scroll;    /* Prevents parallax issues on mobile */
+    background-image: url('Images/Model_8.jpg') !important; /* Use a different image for mobile */
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
   }
 }
 
